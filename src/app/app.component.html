@@ -1,0 +1,12 @@
+<div class="container">
+  <h3>Parent items</h3> 
+  <div *ngFor="let i of items">
+    <li>{{i}}</li>
+  </div>
+
+   <h2>Parent Component</h2>
+
+</div>
+<div>
+  <app-child (childEvent)="childEvent($event)"></app-child>
+</div>
